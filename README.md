@@ -1,3 +1,4 @@
-# Arknights
+# Arknights_web
 初学web练手项目，仿明日方舟web版
-目前已完成部分：登录界面，仓库界面，抽卡界面
+## finished：
+登录界面，仓库界面，抽卡界面
