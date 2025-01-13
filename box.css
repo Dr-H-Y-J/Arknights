@@ -1,0 +1,107 @@
+    body{
+        padding: 0%;
+        margin: 0%;
+        font-family: Arial, sans-serif;
+        display: flex;        
+        perspective: 1000px; 
+        background-image: url(./gallery/arknights1.jpg);
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        z-index: -10;
+        font-family: 'Preahvihear', cursive;
+        
+    }
+    .box1{
+        position: relative;
+        top:0;        
+        border-color: black;
+        width: 49.1%;
+        height: 98.7vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform-style: preserve-3d; 
+        perspective: 1000px;
+    }
+    .float1{
+        animation: float1 6s ease-in-out infinite;
+       }
+    @keyframes float1 {
+        0%, 100% {
+          transform: translate(0, 0)
+        }
+        50% {
+          transform: translate(10px,-10px)
+      }
+    }
+    .float2{
+        animation: float2 6s ease-in-out infinite;
+       }
+    @keyframes float2 {
+        0%, 100% {
+          transform: translate(0, 0)
+        }
+        50% {
+          transform: translate(-10px,10px)
+      }
+    }
+    .photo{
+        position: absolute;
+        width: 90%;
+        height: 101%;
+        top:0%;
+        left:-5%;
+        z-index: -1;
+        background-image: url(./gallery/阿米娅皮肤.png);
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;        
+    } 
+    .btnphoto1{
+        background: url(./gallery/button1.png);
+        background-repeat: no-repeat;
+        background-size: 10%;
+        background-position:center;
+    }
+    .btnphoto2{
+        background: url(./gallery/button2.png);
+        background-repeat: no-repeat;
+        background-size: 10%;
+        background-position:center;
+    }
+    .btnphoto3{
+        background: url(./gallery/button3.png);
+        background-repeat: no-repeat;
+        background-size: 10%;
+        background-position:center;
+    }
+    .btnphoto4{
+        background: url(./gallery/button4.png);
+        background-repeat: no-repeat;
+        background-size: 10%;
+        background-position:center;
+    }
+    .logo1{
+        background: url(./gallery/logo2.png);       
+        background-repeat: no-repeat;
+        background-size: bottom;
+        background-size: 40%;
+        background-position: -5% 70%;           
+    }   
+    .color1{
+        background: linear-gradient(to bottom right, #01314c, #82fff5);
+    }
+    .color2{
+        background: linear-gradient(to bottom right, #11066c, #87bbf0);
+    }
+    .color3{
+        background: linear-gradient(to bottom right, #158684, #b6e9f7);
+    }
+    .color4{
+        background: linear-gradient(to bottom right, #000000, #454040);
+    }
+    .color5{
+        background:linear-gradient(to bottom right, #000000, #161519);
+    }

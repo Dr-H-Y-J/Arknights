@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login2</title>
+    <link rel="stylesheet" href="login2.css">
+    <link href="https://fonts.font.im/css?family=Dancing+Script" rel="stylesheet">
+</head>
+<body>
+    <audio src="./music/bgmusic2.mp3" loop autoplay style="display:none;" id="music1"></audio>
+    <audio src="./music/bgmusic1.mp3" loop style="display:none;" id="music2"></audio>
+    <div class="bg"></div>
+    <div class="title"></div>
+    <div class="image1"></div>
+    <div class="container">
+       <div class="center">
+           <br>
+           <br>
+           <span>服务器</span>
+           <br>
+           <span style="font-size: 2rem;">泰拉</span>
+           <br>
+           <br>
+           <span style="font-size: 6rem;"><sup style="font-size: 3.5rem;">#</sup>0</span>
+       </div>
+       <div class="shape1"></div>
+       <div class="shape2"></div>
+       <div class="shape3"></div>
+       <div class="shape4"></div>
+       <div class="shape5"></div>
+       <div class="shape6"></div>
+    </div>
+    
+    <div class="start" style="display:none;font-family: 'Dancing Script', cursive;" id="switchButton">开始唤醒</div>
+    <div class="form"></div>
+    <div id="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+        <div class="progress-bar2" id="progressBar2"></div>
+        <div class="progress-label" id="progressLabel1">0%</div>
+        <div class="progress-label" id="progressLabel2">0%</div>
+    </div>
+    <div class="login-container">
+        <h2 style="font-family:'Dancing Script', cursive;">Arknights</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" id="submit">login</button>
+        </form>
+    </div>
+</body>
+<script src="login2.js"></script>
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting the traditional way
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Here you would typically send the data to a server for authentication
+    // For demonstration, we'll just log the values
+    console.log('Username:', username);
+    console.log('Password:', password);   
+    // You can add more validation or error handling here
+});
+    const submit = document.getElementById('submit');
+    const start = document.querySelector('.start');
+    const login_container = document.querySelector('.login-container');
+    submit.addEventListener('click', function() {
+        login_container.style.display = 'none';
+        start.style.display = 'block';
+});
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var music1 = document.getElementById('music1');
+    var music2 = document.getElementById('music2');
+    var switchButton = document.getElementById('switchButton');
+
+    var currentMusic = music1; // 初始音乐为 music1
+
+    switchButton.addEventListener('click', function() {
+        // 停止当前音乐
+        currentMusic.pause();
+        currentMusic.currentTime = 0; // 重置当前音乐播放位置
+
+        // 切换到另一段音乐
+        if (currentMusic === music1) {
+            currentMusic = music2;
+        } else {
+            currentMusic = music1;
+        }
+
+        // 播放新的音乐
+        currentMusic.play();
+    });
+});
+   
+</script>
+</html>

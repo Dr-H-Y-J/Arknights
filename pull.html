@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pull</title>
+    <link rel="stylesheet" href="./pull.css">
+    <link href="https://fonts.font.im/css?family=Dancing+Script" rel="stylesheet">
+</head>
+<body>
+    <audio id="bgm3" src="./music/bgmusic3.mp3" loop="true" autoplay hidden></audio>
+    <div class="title1" id="title1">
+        <div class="content1"></div>
+        <div class="content2"></div>
+    </div>
+    <div id ="bg"></div>
+    <div id="change">
+        <div class="right"></div>
+        <div class="left"></div>
+    </div>
+    <div id="bg2">
+        <div id="start1" class="start1" >寻访八次</div>
+    </div>
+    <div id="bg3">
+        <div id="start2" class="start2" >寻访八次</div>
+    </div>
+    <div class="cardcontainer" style="display: none;" id="pull">
+    <button id="closeReset">close</button> 
+    <button class="pass" id="pass">pass</button> 
+    <div class="card1" id="card1"></div>
+    <div class="card2" id="card2"></div>
+    <div class="card3" id="card3"></div>
+    <div class="card4" id="card4"></div>
+    <div class="card5" id="card5"></div>
+    <div class="card6" id="card6"></div>
+    <div class="card7" id="card7"></div>
+    <div class="card8" id="card8"></div>
+    </div>
+
+    
+</body>
+<script src="./pull.js"></script>
+<script>
+     document.querySelector('.title1 .content1').addEventListener('click', function() {
+    window.location.href = 'Arknights.html';
+});
+    document.querySelector('.title1 .content2').addEventListener('click', function() {
+    window.location.href = 'Arknights.html';
+});
+    var num = -90;
+    var num2 = 10;
+    var flag = 0;
+    document.getElementById('change').addEventListener('click', function() {
+        if(flag == 0){
+            num=-90;
+            num2=10;
+            flag=1;        
+            document.querySelector('.right').style.backgroundColor = "rgba(203, 112, 8, 0.938)";
+            document.querySelector('.left').style.backgroundColor = "rgba(255,255,255, 0.5)";
+        }else{
+            num=10;
+            num2=110;
+            flag=0;
+            document.querySelector('.left').style.backgroundColor = "rgba(203, 112, 8, 0.938)";
+            document.querySelector('.right').style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+        }
+    document.getElementById('bg2').style.left = num+"%";
+    document.getElementById('bg3').style.left = num2+"%";
+   
+});
+</script>
+</html>

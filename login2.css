@@ -1,0 +1,268 @@
+
+body{
+    background-color: #c0c0c077;
+}
+.image1{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+    background: url(./gallery/logo1.png);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: -4;
+}
+.bg{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: url(./gallery/login2bg1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    z-index: -5;
+}
+@keyframes rotate1{
+    0%{
+        transform: rotate3d(1,1,1,0deg);
+    }
+    100%{
+        transform: rotate3d(1,1,1,360deg);
+    }
+}
+@keyframes rotate2{
+    0%{
+        transform: rotate3d(-1,-1,-1,0deg);
+    }
+    100%{
+        transform: rotate3d(-1,-1,-1,360deg);
+    }
+}
+.start{
+    position: absolute;
+    top: 60%;
+    left: 44%;
+    width: 8%;
+    height: 3%;
+    background-color: rgba(0, 0, 0, 0.715);
+    display: block;
+    text-align: center;
+    color: white;
+    font-size:1.5rem;
+    padding:30px;
+    border:solid 1px white;
+    box-shadow: 0px 0px 20px 2px rgba(21, 21, 21, 0.708);
+}
+.start:hover{
+    scale: 1.1;
+    transition: scale 0.3s ease-in-out;
+}
+.title{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.715);
+    z-index: 2;
+}
+.form{
+    position: absolute;
+    top: 90%;
+    left: 0%;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.715);
+}
+.container{
+    position: absolute;
+    top: -45%;
+    left: 25%;
+    width:50%;
+    height: 70%;
+    transition: top 2s ease-in-out;
+}
+.center{
+    position: absolute;
+    top: -6%;
+    left: 32%;
+    width:21%;
+    height: 52%;
+    background-color: rgba(0, 0, 0, 0.715);
+    z-index: 2;
+    border: solid 1.5px white;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.715);
+    transition: top 3s ease-in-out;
+    color:azure;
+    text-align: center;
+    padding:50px;
+    font-family: 'Dancing Script', cursive;
+}
+
+    
+.shape1{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width:100%;
+    height: 100%;
+    background: url(./gallery/七边形.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    animation: rotate1 3s linear infinite;
+}
+.shape2{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width:100%;
+    height: 100%;
+    background: url(./gallery/七边形.png);
+    background-size: 80%;
+    opacity: 0.8;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: rotate2 3s linear infinite;
+}
+.shape3{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width:100%;
+    height: 100%;
+    background: url(./gallery/七边形.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    animation: rotate1 4s linear infinite;
+}
+.shape4{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width:100%;
+    height: 100%;
+    background: url(./gallery/七边形.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    animation: rotate2 4s linear infinite;
+}
+.shape5{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width:80%;
+    height: 80%;
+    background: url(./gallery/七边形.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    animation: rotate2 2s linear infinite;
+}
+.shape6{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width:80%;
+    height: 80%;
+    background: url(./gallery/七边形.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    animation: rotate1 2s linear infinite;
+}
+#progress-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 10px;
+    background-color: #facc6a;
+    border-radius: 5px; 
+}
+.progress-bar2 {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    width: 0%;
+    height: 10px;
+    background-color: #facc6a;
+    border-radius: 5px; 
+}
+.progress-label {
+    position: absolute;
+    top: -60%; /* 调整位置以显示在进度条上方 */
+    font-size: 1rem;
+    color: #f9a23e;
+    height: 120%;
+}
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(6, 6, 6, 0.749);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    color: white;
+    display: block;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #aba6a672;
+    color: white;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

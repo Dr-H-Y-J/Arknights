@@ -1,0 +1,337 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    font-family: 'Dancing Script', cursive;
+}
+#bg{
+    background-image: url(./gallery/pullbg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+#bg2{
+    background-image: url(./gallery/pullbg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    z-index: -1;
+    box-shadow: 0px 0px 30px #FFFFFF;
+    transition: all 2s ease-in-out; 
+}
+#bg3{
+    background-image: url(./gallery/pullbg3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 10%;
+    left: 110%;
+    width: 80%;
+    height: 80%;
+    z-index: -1;
+    box-shadow: 0px 0px 30px #FFFFFF;
+    transition: all 2s ease-in-out; 
+}
+#change{
+    position: absolute;
+    top: 5%;
+    right: 40%;
+    width: 20%;
+    height: 2%;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0px 10px 10px #FFFFFF;
+}
+.left{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(203, 112, 8, 0.938);
+    z-index: 1;
+}
+.right{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+.title{
+    position: absolute;
+    top: 5%;
+    left: 1%;
+    width: 22%;
+    height: 10%;
+    z-index: 2;
+  }
+  .title .content{
+    position: absolute;
+    top:0%;
+    left: 3%;
+    width: 15%;
+    height: 100%;
+  }
+.title1{
+    position: absolute;
+    top: 5%;
+    left: 1%;
+    width: 22%;
+    height: 10%;
+    z-index: 2;
+  }
+  .title1 .content1{
+    position: absolute;
+    top:0%;
+    left: 3%;
+    width: 15%;
+    height: 100%;
+    background-color: #d1d0d0dd;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  }
+  .title1 .content2{
+    position: absolute;
+    top:0%;
+    left: 19%;
+    width: 15%;
+    height: 100%;
+    background-color: #dfdfdfe8;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  }
+  .title1 .content1:hover,.title1 .content2:hover{
+    background-color: #ffffff;
+  }
+.start1{
+    position: absolute;
+    top: 76%;
+    right: 4%;
+    width: 18%;
+    height: 6.5%;
+    background-color: rgb(255, 185, 80);
+    border: solid 1px #FFFFFF;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding:20px;
+    border-radius: 30px;
+    box-shadow: 0px 10px 10px #FFFFFF;
+}
+.start2{
+    position: absolute;
+    top: 82%;
+    right: 4%;
+    width: 18%;
+    height: 6.5%;
+    background-color: rgb(255, 185, 80);
+    border: solid 1px #FFFFFF;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding:20px;
+    border-radius: 30px;
+    box-shadow: 0px 10px 10px #FFFFFF;
+}
+.start1:hover,.start2:hover{
+    background-color: rgb(243, 109, 19);
+    color: rgb(255, 255, 255);
+}
+.cardcontainer {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 98%;
+    height: 98%;
+    perspective: 1000px;
+}
+#closeReset {
+    position: absolute;
+    top:1%;
+    right: 1%;
+    height:5%;
+    width: 7%;
+    font-size: 1.3em;
+    padding: 5px 10px;
+    border: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    opacity: 0.6;
+    box-shadow: 0px 10px 15px #FFFFFF;
+}
+#closeReset:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 10px #FFFFFF;
+}
+.pass{
+    position: absolute;
+    top:1%;
+    right: 10%;
+    height:5%;
+    width: 7%;
+    font-size: 1.3em;
+    padding: 5px 10px;
+    border: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    opacity: 0.6;
+    box-shadow: 0px 10px 15px #FFFFFF;
+}
+.pass:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 10px #FFFFFF;
+}
+.card1 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 10%;
+    height: 80%;
+    border: solid 1px #FFFFFF;
+    box-shadow: 0px 0px 40px  #ffffff;
+    background-color: rgba(202, 201, 201, 0.961);
+    opacity: 0.5;
+    transform-style: preserve-3d; 
+    transition: transform 1.5s; 
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card2 {
+    position: absolute;
+    top: 10%;
+    left: 16%;
+    width: 10%;
+    height: 80%;
+    border: solid 1px #FFFFFF;
+    box-shadow: 0px 0px 40px #ffffff;
+    background-color: rgba(202, 201, 201, 0.961);
+    opacity: 0.5;
+    transform-style: preserve-3d; 
+    transition: transform 1.5s; 
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+.card3 {
+    position: absolute;
+    top: 10%;
+    left: 27%;
+    width: 10%;
+    height: 80%;
+    border: solid 1px #FFFFFF;
+    box-shadow: 0px 0px 40px #ffffff;
+    background-color: rgba(202, 201, 201, 0.961);
+    opacity: 0.5;
+    transform-style: preserve-3d; 
+    transition: transform 1.5s; 
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card4 {
+    position: absolute;
+    top: 10%;
+    left: 38%;
+    width: 10%;
+    height: 80%;
+    border: solid 1px #FFFFFF;
+    box-shadow: 0px 0px 40px #ffffff;
+    background-color: rgba(202, 201, 201, 0.961);
+    opacity: 0.5;
+    transform-style: preserve-3d; 
+    transition: transform 1.5s; 
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card5 {
+    position: absolute;
+    top: 10%;   
+    left: 49%;
+    width: 10%;
+    height: 80%;
+    border: solid 1px #FFFFFF;
+    box-shadow: 0px 0px 40px #ffffff;
+    background-color: rgba(202, 201, 201, 0.961);
+    opacity: 0.5;
+    transform-style: preserve-3d; 
+    transition: transform 1.5s; 
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card6 {
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    width: 10%;
+    height: 80%;
+    border: solid 1px #FFFFFF;
+    box-shadow: 0px 0px 40px #ffffff;
+    background-color: rgba(202, 201, 201, 0.961);
+    opacity: 0.5;
+    transform-style: preserve-3d; 
+    transition: transform 1.5s; 
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card7 {
+    position: absolute;
+    top: 10%;
+    left: 71%;
+    width: 10%;
+    height: 80%;
+    border: solid 1px #FFFFFF;
+    box-shadow: 0px 0px 40px #ffffff;
+    background-color: rgba(202, 201, 201, 0.961);
+    opacity: 0.5;
+    transform-style: preserve-3d; 
+    transition: transform 1.5s; 
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card8 {
+    position: absolute;
+    top: 10%;
+    left: 82%;
+    width: 10%;
+    height: 80%;
+    border: solid 1px #FFFFFF;
+    box-shadow: 0px 0px 40px #ffffff;
+    background-color: rgba(202, 201, 201, 0.961);
+    opacity: 0.5;
+    transform-style: preserve-3d; 
+    transition: transform 1.5s; 
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

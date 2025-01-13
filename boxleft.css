@@ -1,0 +1,238 @@
+.hearder{
+    position:absolute;
+    top:0;
+    left:0;
+    width:25%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.hearder .btn{
+    background-size: contain;
+    background-position:center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 70%;
+    width: 15%;
+    margin: 0 10px;
+    z-index: 2;
+    margin: 15px;
+    box-shadow: 0px 10px 60px black;
+}
+.hearder .btn:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+    background-color: #000000;
+}
+.box1 .left1{
+    position: absolute;
+    box-shadow: 0px 0px 20px black;
+    top:63%;
+    left:10%;
+    width:70%; 
+    height:10%; 
+    transform-style: preserve-3d;
+    transform: rotateY(15deg) rotateX(-10deg); 
+    transition: transform 0.5s ease; 
+    opacity: 0.5;     
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;  
+}
+.box1 .Dr .uid{
+    position: absolute;
+    top:90%;
+    left:10%;
+    width:40%;
+    height: 10%;
+    text-align: center;
+    color: white;
+    opacity: 0.8;
+}
+.box1 .Dr .uid span{
+    font-size: 1.5rem;   
+}
+
+.box1 .left1 .decoration1{
+    float: left;
+    position: absolute;
+    top:-20%;
+    left:-2%;
+    width:20%;
+    height:30%;
+    background:linear-gradient(to bottom right, #3d99ef, #c207da)
+}
+.box1 .left1 .decoration2{
+    float: left;
+    position: absolute;
+    bottom:-10%;
+    right:-2%;
+    width:25%;
+    height:30%;
+    background:linear-gradient(to bottom right, #3d99ef, #c207da);
+}
+.box1 .left2{
+    position: absolute;
+    top:77%;
+    left:10%;
+    width:70%; 
+    height:20%; 
+    transform-style: preserve-3d;
+    transform: rotateY(15deg) rotateX(-10deg); 
+    transition: transform 0.5s ease; 
+    display: flex;  
+}
+.box1 .left2 .smallbox1{
+    width:60%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.box1 .left2 .smallbox2 {
+    width:40%;
+    height:100%;  
+}
+.box1 .left2 .smallbox2 .content1{
+    width:100%;
+    height:50%;
+    opacity: 0.5;   
+    background-image: url(./gallery/bg4.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    opacity: 0.9;   
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgba(81, 3, 104, 0.55);
+    box-shadow: 0px 0px 20px rgb(34, 6, 132);
+}
+.box1 .left2 .smallbox2 .content2{
+    width:100%;
+    height:50%;
+    background-image: url(./gallery/bg3.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    opacity: 0.9;   
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgba(92, 11, 99, 0.55);
+    box-shadow: 0px 0px 20px rgb(2, 21, 128);
+}
+.box1 .left2 .smallbox2:hover,.box1 .left2 .smallbox2 .content1:hover,.box1 .left2 .smallbox2 .content2:hover, .box1 .left2 .smallbox1:hover{
+    transform: translate(5%, 0%);
+    transition: transform 0.3s;
+}
+
+.box1 .left1:hover,.box1 .left2:hover{
+    transform: translate(-10%, 0%);
+    transition: transform 0.3s;
+}
+.Dr{
+    border-width: 1px;
+    border-color: black;
+    position: absolute;
+    left:0;
+    top:0%;
+    width:80%;
+    height: 60%;
+    opacity: 1;
+
+}
+.Dr .box1{
+    position: absolute;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    position: absolute;
+    left:-10%;
+    top:75%;
+    width:60%;
+    background-color: rgb(0, 0, 0);
+    height: 13%;  
+    box-shadow: 0px 0px 20px rgb(50, 50, 50); 
+    z-index: -1; 
+}
+.Dr .box2{
+    position: absolute;
+    border-style: solid;
+    border-width: 6px;
+    border-color: rgba(202, 132, 10, 0.7);
+    border-radius: 50%;
+    width:230px;
+    height: 230px;
+    z-index: 5;
+    top:45%;
+    left:13%;
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 10px;        
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px rgb(191, 191, 191);
+    text-shadow: 0px 0px 20px rgb(50, 50, 50);
+    background-color: #0000008d;
+}
+.Dr .button5{
+    position: absolute;
+    right:30%;
+    top:90%;
+    width:10%;
+    background-image: url(./gallery/button5.png);
+    background-size: contain;
+    background-position:center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 10%;     
+    transition: transform 0.3s;
+}
+.Dr .button6{
+    position: absolute;
+    right:20%;
+    top:90%;
+    width:10%;
+    background-image: url(./gallery/button6.png);
+    background-size: contain;
+    background-position:center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 10%;  
+    transition: transform 0.3s; 
+    }
+.Dr .button5:hover,.Dr .button6:hover{
+    transform: perspective(1000px) rotateZ(180deg);
+}    
+.Dr .line{
+    position: absolute;
+    right:15%;
+    top:95%;
+    width:25%;
+    height: 1%;  
+    background: linear-gradient(to bottom right , #cf4aff, #fefefe67);
+    background-repeat: no-repeat; 
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgb(50, 50, 50); 
+    z-index: -1;
+}    
+
+.text {
+    font-size: 60px;
+    font-weight: bold;
+    color: #ffffffd4;
+    position: relative;
+}
+
+.text::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: rgba(18, 61, 152, 0.3);
+    z-index: -1;
+}

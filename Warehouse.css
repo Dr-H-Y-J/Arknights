@@ -1,0 +1,866 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000ac;
+   
+  }
+  
+  .scroll-container {
+    position: absolute; 
+    width: 100%; 
+    height: 80%;
+    top: 19%;
+    left: 0; 
+    overflow-x: auto; 
+    border: 1px solid #ccc; 
+    white-space: nowrap;
+    background-color: #ffffffbc; 
+    background-image: linear-gradient(to right, #0000003b 2px, transparent 2px),
+                   linear-gradient(to bottom, #0000004b 2px, transparent 2px);
+    background-size: 25px 25px;
+    box-shadow:  inset 0 0 60px rgba(0, 0, 0, 0.642); 
+    border-top: 4px solid #000000d6;
+    display: flex; /* 启用 Flexbox 布局 */
+    flex-direction: column; /* 按列排列 */
+    flex-wrap: wrap; /* 允许换行 */
+                
+
+  
+  }
+  .title1{
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    width: 30%;
+    height: 10%;
+    z-index: 2;
+  }
+  .title1 .content1{
+    position: absolute;
+    top:0%;
+    left: 3%;
+    width: 15%;
+    height: 100%;
+    background-color: #000000dd;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  }
+  .title1 .content2{
+    position: absolute;
+    top:0%;
+    left: 19%;
+    width: 15%;
+    height: 100%;
+    background-color: #000000dd;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  }
+  .title1 .content1:hover,.title1 .content2:hover{
+    background-color: #ffffffa9;
+  }
+  .filters {
+    position: absolute;
+    top: 5%;
+    right: -1%;
+    width: 60%;
+    height: 8%;
+    
+}
+
+.filter-btn {
+    height: 100%;
+    width: 23%;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f9f9f97a;
+    font-size: 1rem;
+}
+
+.filter-btn.active {
+    background-color: #000000ce;
+    color: white;
+}
+  .scroll-content {
+    display: inline-block; /* 使内容块内联显示 */
+    width: 11%;
+    height: 20%;
+    margin: 40px 3px 40px 3px; 
+    padding: 0%;
+  }
+  .scroll-content:hover {
+    scale: 1.3;
+    transition: all 0.3s ease-in-out;
+  }
+  .scroll-content .img-消耗品1{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品1.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品2{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品2.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品3{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品3.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品4{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品4.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品5{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品5.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品6{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品6.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品7{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品7.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品8{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品8.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品9{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品9.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品10{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品10.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品11{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品11.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品12{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品12.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品13{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品13.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品14{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品14.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品15{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品15.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品16{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品16.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品17{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品17.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品18{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品18.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品19{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品19.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品20{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品20.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品21{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品21.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品22{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品22.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品23{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品23.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品24{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品24.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品25{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品25.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品26{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品26.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品27{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品27.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品28{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品28.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品29{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品29.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品30{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品30.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品31{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品31.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-消耗品32{
+    width:100%;
+    height:100%;
+    background:url(./仓库/消耗品32.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .scroll-content .img-道具1{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具1.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .scroll-content .img-道具2{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具2.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具3{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具3.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具4{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具4.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具5{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具5.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具6{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具6.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具7{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具7.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具8{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具8.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具9{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具9.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具10{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具10.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具11{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具11.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具12{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具12.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具13{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具13.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具14{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具14.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具15{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具15.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具16{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具16.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  } 
+  .scroll-content .img-道具17{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具17.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具18{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具18.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具19{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具19.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具20{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具20.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具21{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具21.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具22{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具22.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具23{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具23.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具24{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具24.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具25{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具25.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具26{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具26.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具27{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具27.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具28{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具28.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具29{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具29.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具30{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具30.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具31{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具31.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具32{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具32.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具33{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具33.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-道具34{
+    width:100%;
+    height:100%;
+    background:url(./仓库/道具34.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他1{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他1.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他2{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他2.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他3{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他3.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他4{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他4.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他5{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他5.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他6{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他6.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他7{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他7.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他8{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他8.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他9{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他9.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他10{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他10.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他11{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他11.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他12{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他12.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他13{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他13.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他14{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他14.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他15{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他15.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他16{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他16.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他17{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他17.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他18{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他18.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他19{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他19.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他20{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他20.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他21{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他21.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他22{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他22.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他23{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他23.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他24{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他24.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他25{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他25.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他26{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他26.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他27{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他27.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .scroll-content .img-其他28{
+    width:100%;
+    height:100%;
+    background:url(./仓库/其他28.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+
+
+  .scroll-content .foot{
+    position: relative;
+    top: 80%;
+    left: 60%;
+    width: 30%;
+    height: 15%;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #fff;
+    text-align:right;
+    padding: 5px;
+  }
+
+  
+  
+  
+  
